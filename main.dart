@@ -5,198 +5,198 @@ void main() => runApp(WA());
 class WA extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MaterialApp(
-    home: Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.teal,
-        leading: CircleAvatar(
-          backgroundImage: NetworkImage(
-              "https://i0.wp.com/noticieros.televisa.com/wp-content/uploads/2020/09/vicente-el-perrito-instagram-rescatame-bogota.jpg?fit=1080%2C609&ssl=1"),
-        ),
-        title: Column(
-          children: [
-            Text(
-              "Vicente",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        home: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Colors.teal,
+            leading: CircleAvatar(
+              backgroundImage: NetworkImage(
+                  "https://i0.wp.com/noticieros.televisa.com/wp-content/uploads/2020/09/vicente-el-perrito-instagram-rescatame-bogota.jpg?fit=1080%2C609&ssl=1"),
             ),
-            Text(
-              "últ. vez hoy a las 9:49",
-              style: TextStyle(fontSize: 14),
+            title: Column(
+              children: [
+                Text(
+                  "Vicente",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "últ. vez hoy a las 21:08",
+                  style: TextStyle(fontSize: 14),
+                ),
+              ],
             ),
-          ],
-        ),
-        actions: [
-          Icon(
-            Icons.add_call,
+            actions: [
+              Icon(
+                Icons.add_call,
+              ),
+              Icon(
+                Icons.attach_file,
+              ),
+              Icon(
+                Icons.settings,
+              ),
+            ],
           ),
-          Icon(
-            Icons.attach_file,
-          ),
-          Icon(
-            Icons.settings,
-          ),
-        ],
-      ),
-      body: Stack(
-        children: [
-          Image.network(
-            "https://pbs.twimg.com/media/ENYqsrtU8AAP07m.jpg",
-            fit: BoxFit.fill,
-            height: 1080,
-          ),
-          Container(
-            alignment: Alignment.bottomLeft,
-            width: 350,
-            padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-            child: Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.only(
+          body: Stack(
+            children: [
+              Image.network(
+                "https://pbs.twimg.com/media/ENYqsrtU8AAP07m.jpg",
+                fit: BoxFit.fill,
+                height: 1080,
+              ),
+              Container(
+                alignment: Alignment.bottomLeft,
+                width: 350,
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(15),
                     bottomLeft: Radius.circular(15),
                     bottomRight: Radius.circular(15),
                   )),
-              color: Colors.white,
-              child: TextFormField(
-                autofocus: true,
-                keyboardType: TextInputType.text,
-                decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.emoji_emotions),
-                  suffixIcon: Icon(Icons.photo_camera),
-                  hintText: "Escribir mensaje",
+                  color: Colors.white,
+                  child: TextFormField(
+                    autofocus: true,
+                    keyboardType: TextInputType.text,
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.emoji_emotions),
+                      suffixIcon: Icon(Icons.photo_camera),
+                      hintText: "Escribir mensaje",
+                    ),
+                  ),
                 ),
               ),
-            ),
-          ),
-          ListView(
-            padding: EdgeInsets.fromLTRB(100, 15, 0, 100),
-            children: <Widget>[
-              Card(
-                color: Colors.yellow[300],
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
+              ListView(
+                padding: EdgeInsets.fromLTRB(100, 15, 0, 100),
+                children: <Widget>[
+                  Card(
+                    color: Colors.yellow[300],
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(15),
                       bottomLeft: Radius.circular(15),
                       bottomRight: Radius.circular(15),
                     )),
-                child: ListTile(
-                  trailing: Icon(
-                    Icons.done_all,
+                    child: ListTile(
+                      trailing: Icon(
+                        Icons.done_all,
+                      ),
+                      title: Text("Hey"),
+                      subtitle: Text("20:58"),
+                    ),
                   ),
-                  title: Text("Hey"),
-                  subtitle: Text("20:58"),
-                ),
+                ],
               ),
-            ],
-          ),
-          ListView(
-            padding: EdgeInsets.fromLTRB(0, 100, 100, 100),
-            children: <Widget>[
-              Card(
-                color: Colors.grey[500],
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
+              ListView(
+                padding: EdgeInsets.fromLTRB(0, 100, 100, 100),
+                children: <Widget>[
+                  Card(
+                    color: Colors.grey[500],
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
                       topRight: Radius.circular(15),
                       bottomLeft: Radius.circular(15),
                       bottomRight: Radius.circular(15),
                     )),
-                child: ListTile(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.only(
+                    child: ListTile(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(15),
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       )),
-                  trailing: Icon(
-                    Icons.done_all,
-                  ),
-                  title: Text("¿Cómo estas?"),
-                  subtitle: Text("21:00"),
-                ),
-              )
-            ],
-          ),
-          ListView(
-            padding: EdgeInsets.fromLTRB(100, 185, 0, 100),
-            children: <Widget>[
-              Card(
-                color: Colors.yellow[300],
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
+                      trailing: Icon(
+                        Icons.done_all,
+                      ),
+                      title: Text("¿Cómo estas?"),
+                      subtitle: Text("21:00"),
+                    ),
+                  )
+                ],
+              ),
+              ListView(
+                padding: EdgeInsets.fromLTRB(100, 185, 0, 100),
+                children: <Widget>[
+                  Card(
+                    color: Colors.yellow[300],
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(15),
                       bottomLeft: Radius.circular(15),
                       bottomRight: Radius.circular(15),
                     )),
-                child: ListTile(
-                  trailing: Icon(
-                    Icons.done_all,
+                    child: ListTile(
+                      trailing: Icon(
+                        Icons.done_all,
+                      ),
+                      title: Text("Bien bro y tú que tal?"),
+                      subtitle: Text("21:05"),
+                    ),
                   ),
-                  title: Text("Bien bro y tú que tal?"),
-                  subtitle: Text("21:05"),
-                ),
+                ],
               ),
-            ],
-          ),
-          ListView(
-            padding: EdgeInsets.fromLTRB(0, 270, 100, 100),
-            children: <Widget>[
-              Card(
-                color: Colors.grey[500],
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
+              ListView(
+                padding: EdgeInsets.fromLTRB(0, 270, 100, 100),
+                children: <Widget>[
+                  Card(
+                    color: Colors.grey[500],
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
                       topRight: Radius.circular(15),
                       bottomLeft: Radius.circular(15),
                       bottomRight: Radius.circular(15),
                     )),
-                child: ListTile(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.only(
+                    child: ListTile(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(15),
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       )),
-                  trailing: Icon(
-                    Icons.done_all,
-                  ),
-                  title: Text("Igual, igual. ¿Qué haciendo?"),
-                  subtitle: Text("21:08"),
-                ),
-              )
-            ],
-          ),
-          ListView(
-            padding: EdgeInsets.fromLTRB(100, 355, 0, 100),
-            children: <Widget>[
-              Card(
-                color: Colors.yellow[300],
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
+                      trailing: Icon(
+                        Icons.done_all,
+                      ),
+                      title: Text("Igual, igual. ¿Qué haciendo?"),
+                      subtitle: Text("21:08"),
+                    ),
+                  )
+                ],
+              ),
+              ListView(
+                padding: EdgeInsets.fromLTRB(100, 355, 0, 100),
+                children: <Widget>[
+                  Card(
+                    color: Colors.yellow[300],
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(15),
                       bottomLeft: Radius.circular(15),
                       bottomRight: Radius.circular(15),
                     )),
-                child: ListTile(
-                  trailing: Icon(
-                    Icons.done_all,
+                    child: ListTile(
+                      trailing: Icon(
+                        Icons.done_all,
+                      ),
+                      title: Text("Aquí dandole un rato al WZ y tú?"),
+                      subtitle: Text("21:11"),
+                    ),
                   ),
-                  title: Text("Aquí dandole un rato al WZ y tú?"),
-                  subtitle: Text("21:11"),
+                ],
+              ),
+              Container(
+                alignment: Alignment.bottomRight,
+                padding: EdgeInsets.fromLTRB(5, 0, 5, 5),
+                child: FloatingActionButton(
+                  backgroundColor: Colors.green,
+                  onPressed: () {},
+                  child: Icon(
+                    Icons.mic,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ],
           ),
-          Container(
-            alignment: Alignment.bottomRight,
-            padding: EdgeInsets.fromLTRB(5, 0, 5, 5),
-            child: FloatingActionButton(
-              backgroundColor: Colors.green,
-              onPressed: () {},
-              child: Icon(
-                Icons.mic,
-                color: Colors.white,
-              ),
-            ),
-          ),
-        ],
-      ),
-    ),
-  );
+        ),
+      );
 }
