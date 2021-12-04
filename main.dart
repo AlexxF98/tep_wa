@@ -17,10 +17,12 @@ class WA extends StatelessWidget {
                 Text(
                   "Vicente",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.start,
                 ),
                 Text(
                   "últ. vez hoy a las 21:08",
                   style: TextStyle(fontSize: 14),
+                  textAlign: TextAlign.start,
                 ),
               ],
             ),
@@ -59,8 +61,9 @@ class WA extends StatelessWidget {
                     autofocus: true,
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.emoji_emotions),
-                      suffixIcon: Icon(Icons.photo_camera),
+                      prefixIcon:
+                          Icon(Icons.emoji_emotions, color: Colors.teal),
+                      suffixIcon: Icon(Icons.photo_camera, color: Colors.teal),
                       hintText: "Escribir mensaje",
                     ),
                   ),
@@ -78,11 +81,9 @@ class WA extends StatelessWidget {
                       bottomRight: Radius.circular(15),
                     )),
                     child: ListTile(
-                      trailing: Icon(
-                        Icons.done_all,
-                      ),
+                      trailing: Icon(Icons.done_all, color: Colors.blueAccent),
                       title: Text("Hey"),
-                      subtitle: Text("20:58"),
+                      subtitle: Text("20:58", textAlign: TextAlign.end),
                     ),
                   ),
                 ],
@@ -91,7 +92,7 @@ class WA extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(0, 100, 100, 100),
                 children: <Widget>[
                   Card(
-                    color: Colors.grey[500],
+                    color: Colors.teal,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.only(
                       topRight: Radius.circular(15),
@@ -105,11 +106,9 @@ class WA extends StatelessWidget {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       )),
-                      trailing: Icon(
-                        Icons.done_all,
-                      ),
+                      trailing: Icon(Icons.done_all, color: Colors.blueAccent),
                       title: Text("¿Cómo estas?"),
-                      subtitle: Text("21:00"),
+                      subtitle: Text("21:00", textAlign: TextAlign.end),
                     ),
                   )
                 ],
@@ -126,11 +125,9 @@ class WA extends StatelessWidget {
                       bottomRight: Radius.circular(15),
                     )),
                     child: ListTile(
-                      trailing: Icon(
-                        Icons.done_all,
-                      ),
+                      trailing: Icon(Icons.done_all, color: Colors.blueAccent),
                       title: Text("Bien bro y tú que tal?"),
-                      subtitle: Text("21:05"),
+                      subtitle: Text("21:05", textAlign: TextAlign.end),
                     ),
                   ),
                 ],
@@ -139,7 +136,7 @@ class WA extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(0, 270, 100, 100),
                 children: <Widget>[
                   Card(
-                    color: Colors.grey[500],
+                    color: Colors.teal,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.only(
                       topRight: Radius.circular(15),
@@ -153,11 +150,9 @@ class WA extends StatelessWidget {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       )),
-                      trailing: Icon(
-                        Icons.done_all,
-                      ),
+                      trailing: Icon(Icons.done_all, color: Colors.blueAccent),
                       title: Text("Igual, igual. ¿Qué haciendo?"),
-                      subtitle: Text("21:08"),
+                      subtitle: Text("21:08", textAlign: TextAlign.end),
                     ),
                   )
                 ],
@@ -174,11 +169,9 @@ class WA extends StatelessWidget {
                       bottomRight: Radius.circular(15),
                     )),
                     child: ListTile(
-                      trailing: Icon(
-                        Icons.done_all,
-                      ),
+                      trailing: Icon(Icons.done_all),
                       title: Text("Aquí dandole un rato al WZ y tú?"),
-                      subtitle: Text("21:11"),
+                      subtitle: Text("21:11", textAlign: TextAlign.end),
                     ),
                   ),
                 ],
@@ -187,7 +180,7 @@ class WA extends StatelessWidget {
                 alignment: Alignment.bottomRight,
                 padding: EdgeInsets.fromLTRB(5, 0, 5, 5),
                 child: FloatingActionButton(
-                  backgroundColor: Colors.green,
+                  backgroundColor: Colors.teal,
                   onPressed: () {},
                   child: Icon(
                     Icons.mic,
